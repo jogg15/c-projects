@@ -28,11 +28,11 @@ int main() {
         return 1;
     }
 
-    const int vysledek = kpn(user, comp);
+    const int result = kpn(user, comp);
 
-    if (vysledek == -1)
+    if (result == -1)
         printf("Remiza!\n");
-    else if (vysledek == 1)
+    else if (result == 1)
         printf("Vyhral jsi!\n==========\n");
     else
         printf("Prohral jsi. Zkus to znova!\n");

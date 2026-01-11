@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float height;
-    float weight;
+    float height, weight;
 
     printf("Zadej svoji vysku v metrech: ");
     scanf(" %f", &height);
@@ -10,9 +9,9 @@ int main() {
     printf("Zadej svoji vahu v kg: ");
     scanf(" %f", &weight);
 
-    const float vysledek = weight / (height * height);
+    const float result = weight / (height * height);
 
-    printf("Tve BMI je: %f\n", vysledek);
+    printf("Tve BMI je: %f\n", result);
 
     return 0;
 }

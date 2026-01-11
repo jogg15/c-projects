@@ -2,32 +2,32 @@
 #import <float.h>
 
 int main () {
-    char znamenko;
-    double vysledek, x, y;
+    char operator;
+    double result, x, y;
 
     printf("Zadej znamenko [+, -, *, /]: ");
-    scanf(" %c", &znamenko);
+    scanf(" %c", &operator);
 
     printf("Zadej dve cislice: ");
     scanf(" %lf %lf", &x, &y);
 
-    switch (znamenko) {
+    switch (operator) {
         case '+':
-            vysledek = x + y;
+            result = x + y;
             break;
         case '-':
-            vysledek = x - y;
+            result = x - y;
             break;
         case '*':
-            vysledek = x * y;
+            result = x * y;
             break;
         case '/':
-            vysledek = x / y;
+            result = x / y;
             break;
         default:
             printf("Neplatne znamenko.\n");
             return 1;
     }
-        printf("%.2lf\n", vysledek);
+        printf("%.2lf\n", result);
     return 0;
 }
